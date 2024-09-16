@@ -1,0 +1,166 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+OrionLib:MakeNotification({
+	Name = "secret hub v3",
+	Content = "Welcome",
+	Image = "rbxassetid://7733955740",
+	Time = 5
+})
+
+local Window = OrionLib:MakeWindow({Name = "secret hub v3", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+---tabs---
+
+local PlayerTab = Window:MakeTab({
+	Name = "Player setting",
+	Icon = "rbxassetid://7734053495",
+	PremiumOnly = false
+})
+
+local Section = PlayerTab:AddSection({
+	Name = "Setting"
+})
+
+---tab 2---
+
+local OtherTab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://7733964640",
+	PremiumOnly = false
+})
+
+local Section = OtherTab:AddSection({
+	Name = "Very cool scripts"
+})
+
+---tabs 3---
+
+local SlimesTab = Window:MakeTab({
+	Name = "Revenge Of Slimes",
+	Icon = "rbxassetid://7743866529",
+	PremiumOnly = false
+})
+
+local Section = SlimesTab:AddSection({
+	Name = "Cool infinity coins"
+})
+
+---Other tabs---
+
+OtherTab:AddButton({
+	Name = "no cooldown",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-no-cooldown-6517"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+OtherTab:AddButton({
+	Name = "Ghost hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghost-hub-16101"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+OtherTab:AddButton({
+	Name = "Fly gui v3",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-gui-v3-11668"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+OtherTab:AddButton({
+	Name = "Rumble guest Killaura",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/9hZMWZQG"))()
+  	end    
+})
+
+OtherTab:AddButton({
+	Name = "Dumb craftwars Scripts [Use hold sword to autofarm Mobs]",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/V5yFWmCi"))()
+  	end    
+})
+
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+---Player Tabs---
+
+PlayerTab:AddButton({
+	Name = "WalkSpeed",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 125
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "JumpPower",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 475
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "Infinity Jump",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/g76cP72T"))()
+  	end    
+})
+
+PlayerTab:AddButton({
+	Name = "Esp health bar",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/PjjC3SL3"))()
+  	end    
+})
+
+---Slimes Tabs---
+
+SlimesTab:AddButton({
+	Name = "1 Trillions Coins",
+	Callback = function()
+      		game.Workspace.DoShopPurchase:InvokeServer(game.Players.LocalPlayer.leaderstats.Coins, -1000000000000,"skill3")
+  	end    
+})
+
+SlimesTab:AddButton({
+	Name = "100 Billions Coins",
+	Callback = function()
+      		game.Workspace.DoShopPurchase:InvokeServer(game.Players.LocalPlayer.leaderstats.Coins, -100000000000,"skill3")
+  	end    
+})
+
+SlimesTab:AddButton({
+	Name = "10 Billions Coins",
+	Callback = function()
+      		game.Workspace.DoShopPurchase:InvokeServer(game.Players.LocalPlayer.leaderstats.Coins, -10000000000,"skill3")
+  	end    
+})
+
+SlimesTab:AddButton({
+	Name = "1 Billions Coins",
+	Callback = function()
+      		game.Workspace.DoShopPurchase:InvokeServer(game.Players.LocalPlayer.leaderstats.Coins, -1000000000,"skill3")
+  	end    
+})
